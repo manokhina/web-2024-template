@@ -206,7 +206,7 @@ function App() {
     setEditRecipe(null);
   };
 
-  const handleServingsChange = (event: Event, newValue: number | number[]) => {
+  const handleServingsChange = (_: Event, newValue: number | number[]) => {
     if (typeof newValue === 'number') {
       setServingsMultiplier(newValue);
       if (editRecipe) {
